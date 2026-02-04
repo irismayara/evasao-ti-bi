@@ -1,19 +1,19 @@
-# evasao-ti-bi
+# Análise da Evasão e Permanência em Cursos de TI no Ensino Superior Brasileiro (2014–2024)
 
-Projeto de BI com foco na análise da **evasão acadêmica** em cursos de **Tecnologia da Informação (TI)**, utilizando indicadores educacionais e visualizações para apoiar a tomada de decisão.
+Este repositório contém o código-fonte, scripts de ETL e materiais associados ao artigo **“Análise da evasão e permanência em cursos de Tecnologia da Informação no ensino superior brasileiro sob perspectivas temporal, regional e sociodemográfica”**.
+
+A pesquisa utiliza os microdados do **Censo da Educação Superior (INEP)** no período de **2014 a 2024**, com foco em cursos da área de **Computação e Tecnologias da Informação e Comunicação (TIC)**, aplicando técnicas de **Business Intelligence (BI)** para estruturação, modelagem e visualização de indicadores relacionados à evasão e permanência acadêmica.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
-O objetivo deste projeto é analisar e acompanhar a evasão em cursos da área de TI, explorando métricas como:
+Disponibilizar uma solução analítica reprodutível para:
 
-- Quantidade de **ingressantes**
-- Quantidade de **matriculados**
-- Quantidade de **concluintes**
-- **Taxa de evasão**
-- **Taxa de permanência**
-- Evolução dos indicadores ao longo dos anos
+- tratamento e filtragem de microdados do INEP;
+- construção de base integrada (série histórica 2014–2024);
+- modelagem analítica (Data Warehouse / Star Schema);
+- apoio à visualização interativa de indicadores.
 
 ---
 
@@ -25,6 +25,17 @@ Indicadores trabalhados:
 - **Taxa de conclusão**
 - **Taxa de permanência**
 
+---
+
+## Fonte dos Dados
+
+Os dados utilizados provêm dos microdados públicos disponibilizados pelo INEP: https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/censo-da-educacao-superior
+
+- **Censo da Educação Superior – Microdados (2014 a 2024)**  
+- Arquivos utilizados:
+  - Cadastro de Cursos (`MICRODADOS_CADASTRO_CURSOS`)
+  - Cadastro de IES (`MICRODADOS_CADASTRO_IES`)
+ 
 ---
 
 ## 🧱 Estrutura do projeto
